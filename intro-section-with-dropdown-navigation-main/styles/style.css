@@ -69,5 +69,23 @@ body {
 }
 
 .footer-img { 
-    width: 60px; /* Tamanho uniforme das imagens */
-    height: auto;}
+    width: 60px; 
+    height: auto;
+}
+
+@media (max-width: 1440px){
+    .header{
+        padding: 32px;
+    }
+
+    .header-img{
+        width: 83px;
+        height: 27px;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
