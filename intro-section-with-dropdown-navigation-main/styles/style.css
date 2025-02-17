@@ -31,12 +31,20 @@ cursor: pointer;
     position: fixed;
     top: 0;
     display: flex;
-    right: 0;
+    right: -100%;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: 32px;
     height: 100vh;
+    padding: 32px 38px 0 24px;
     background-color: white;
+    transition: right 0.2s ease-out;
+
+}
+
+.menu-close{
+    width: 24px;
+    align-self: flex-end;
 }
 
 .container-buttons{
@@ -49,16 +57,24 @@ cursor: pointer;
     border: none;
     background-color: transparent;
     color: var(--segundaryColor);
+    font-weight: bold;
 }
 
-.menu-close{
-    width: 16px;
+.menu-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .menu-buttons>button{
     border: none;
     background-color: transparent;
     color: var(--segundaryColor);
+}
+
+#button-regist{
+    border: 1px solid var(--segundaryColor);
+    padding: 13px 42px;
 }
 
 .figure-img {
@@ -78,21 +94,21 @@ cursor: pointer;
     font-weight: bold;
     margin-bottom: 16px;
 }
-
+/*Alteracao html-14/02*/
 
 .inf-text {
     padding: 16px;
     font-weight: 400;
     font-size: 16px;
     margin-bottom: 24px;
-    color: rgb(97, 96, 96);
+    color: var(--segundaryColor);
     text-align: center;
     width: 343px;
 }
 
 .inf-button {
-    background-color: hsl(0, 0%, 8%);
-    color: hsl(0, 0%, 98%);
+    background-color: var(--tertiartColor);
+    color: var(--primaryColor);
     padding: 12px 24px;
     border: none;
     border-radius: 20px;
